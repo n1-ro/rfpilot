@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased text-slate-900 bg-white;
+  }
+}
+
+@layer components {
+  .confidence-high {
+    @apply text-emerald-600;
+  }
+  .confidence-medium {
+    @apply text-amber-600;
+  }
+  .confidence-low {
+    @apply text-red-600;
+  }
+  .answer-editor {
+    min-height: 220px;
+  }
+}
+
+.prose-source {
+  border-left: 2px solid #e2e8f0;
+  padding-left: 0.75rem;
+  font-size: 0.875rem;
+  color: #475569;
+}
